@@ -4,9 +4,13 @@ const FriendList = ({ friends }) => {
   return (
     <div>
       <ul>
-        {friends.map((friend) => (
-          <li key={friend.id}>
-            <FriendListItem />
+        {friends.map(({ avatar, name, isOnlined, id }) => (
+          <li key={id}>
+            <FriendListItem
+              avatar={avatar}
+              name={name}
+              isOnline={isOnlined}
+            />
           </li>
         ))}
       </ul>
