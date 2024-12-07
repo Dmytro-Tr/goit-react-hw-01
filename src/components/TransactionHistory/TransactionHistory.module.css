@@ -1,0 +1,39 @@
+.container {
+  background-color: #ffffff;
+  padding: 0;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+.thead {
+  background-color: #303030;
+  color: #ffffff;
+  text-wrap: 700;
+
+  th {
+    padding: 6px;
+    border: 1px solid black;
+  }
+}
+
+.body:nth-child(even) {
+  background-color: #d5d4d4;
+}
+
+.body {
+  color: #000000;
+
+  td {
+    padding: 6px;
+    border: 1px solid black;
+  }
+}
+
+.type {
+  text-align: left;
+  text-transform: capitalize;
+}
